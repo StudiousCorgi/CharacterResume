@@ -1,0 +1,157 @@
+.newsreader {
+    font-family: "Newsreader", serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+  }
+
+  .noto-serif {
+    font-family: "Noto Serif", serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-variation-settings: "wdth" 100;
+  }
+
+  /* Body */
+
+  :root {
+    --parchment: #f5e8c0;
+    --ink: #3a3226;
+    --highlight: #8b5a2b;
+    --border-color: #6d4c2b;
+}
+
+body {
+    background-color: #222;
+    color: var(--ink);
+    font-family: 'Times New Roman', serif;
+    background-image: ;
+    background-size: cover;
+    padding-top: 20px;
+    padding-bottom: 40px;
+}
+
+.character-sheet {
+    background-color: var(--parchment);
+    border: 15px solid var(--border-color);
+    border-image: url('https://www.transparenttextures.com/patterns/wood-pattern.png') 30 round;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5), inset 0 0 20px rgba(139, 90, 43, 0.3);
+    padding: 30px;
+    margin-bottom: 30px;
+    position: relative;
+    overflow: hidden;
+}
+
+.character-sheet::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: url('https://www.transparenttextures.com/patterns/cream-paper.png');
+    opacity: 0.3;
+    z-index: 0;
+}
+
+.character-sheet > * {
+    position: relative;
+    z-index: 1;
+}
+
+.header {
+    text-align: center;
+    margin-bottom: 30px;
+    border-bottom: 3px double var(--border-color);
+    padding-bottom: 20px;
+}
+
+.header h1 {
+    font-family: 'Palatino Linotype', 'Book Antiqua', serif;
+    font-weight: bold;
+    color: var(--highlight);
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+    letter-spacing: 2px;
+}
+
+.profile-img {
+    width: 150px;
+    height: 150px;
+    border: 5px solid var(--border-color);
+    border-radius: 50%;
+    object-fit: cover;
+    margin: 0 auto 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.section-title {
+    font-family: 'Palatino Linotype', 'Book Antiqua', serif;
+    color: var(--highlight);
+    border-bottom: 2px solid var(--border-color);
+    padding-bottom: 5px;
+    margin-top: 20px;
+    margin-bottom: 15px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.stat-block {
+    background-color: rgba(255, 255, 255, 0.3);
+    border: 1px solid var(--border-color);
+    border-radius: 5px;
+    padding: 15px;
+    margin-bottom: 15px;
+    box-shadow: inset 0 0 10px rgba(139, 90, 43, 0.2);
+}
+
+.stat-label {
+    font-weight: bold;
+    color: var(--highlight);
+}
+
+.personality-badge {
+    background-color: var(--highlight);
+    color: var(--parchment);
+    padding: 5px 10px;
+    border-radius: 15px;
+    font-weight: bold;
+    display: inline-block;
+    margin-right: 5px;
+    margin-bottom: 5px;
+}
+
+.skill-bar {
+    height: 20px;
+    background-color: #e0d5c0;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    overflow: hidden;
+    border: 1px solid var(--border-color);
+}
+
+.skill-progress {
+    height: 100%;
+    background-color: var(--highlight);
+    width: 0;
+    transition: width 1s ease-in-out;
+}
+
+.hobby-icon {
+    font-size: 2rem;
+    color: var(--highlight);
+    margin-bottom: 10px;
+}
+
+.footer {
+    text-align: center;
+    margin-top: 30px;
+    font-style: italic;
+    color: var(--highlight);
+}
+
+@media (max-width: 768px) {
+    .character-sheet {
+        padding: 15px;
+    }
+}
