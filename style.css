@@ -26,7 +26,7 @@ body {
     background-color: #222;
     color: var(--ink);
     font-family: 'Times New Roman', serif;
-    background-image: ;
+    background-image: url(./Digital\ Assets/Vintage\ Paper.png);
     background-size: cover;
     padding-top: 20px;
     padding-bottom: 40px;
@@ -35,7 +35,7 @@ body {
 .character-sheet {
     background-color: var(--parchment);
     border: 15px solid var(--border-color);
-    border-image: url('https://www.transparenttextures.com/patterns/wood-pattern.png') 30 round;
+    border-image: url(./Leather\ texture.png) 30 round;
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.5), inset 0 0 20px rgba(139, 90, 43, 0.3);
     padding: 30px;
     margin-bottom: 30px;
