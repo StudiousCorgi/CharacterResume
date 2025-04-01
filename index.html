@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./style.css">
-    <link rel="script" href="./script.js">
+    <script src="./script.js"></script>
     <link rel="stylesheet" href="./bootstrap.css">
     <link rel="script" href="./bootstrap.bundle.js">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -17,14 +17,21 @@
 </head>
 
 <body>
+    <!-- Scroll overlay with wax seal effect -->
+    <div id="scroll-overlay">
+        <div class="wax-seal" id="wax-seal">
+            <div class="seal-design">ABH</div>
+        </div>
+    </div>
     <div class="container">
         <div class="character-sheet">
             <div class="header">
-                <img src="./CharacterPort.jpg" alt="Adventurer's Portrait" class="profile-img">
+                <img src="./CharacterPort.jpg" alt="Adventurer's Portrait" class="profile-img"> <img
+                    src="./Bountress_1.jpg" alt="Character's Portrait" class="profile-img">
                 <h1>Lady Asia of The Southern Isle</h1>
                 <p class="lead">Full Stack Developer & Digital Craftsman</p>
             </div>
-            
+
             <div class="row">
                 <div class="col-md-6">
                     <h3 class="section-title">Character Stats</h3>
@@ -58,20 +65,20 @@
                             <div class="col-8">Asia.Brown-Haller@mscoding.org</div>
                         </div>
                     </div>
-                    
+
                     <h3 class="section-title">Personality Traits</h3>
                     <div class="stat-block">
                         <h5>MBTI Type:</h5>
-                        <span class="personality-badge">E</span>  
-                        <span class="personality-badge">N</span>    
+                        <span class="personality-badge">E</span>
+                        <span class="personality-badge">N</span>
                         <span class="personality-badge">T</span>
                         <span class="personality-badge">J</span>
-                            <li>Energized and Sociable Morale Booster</li>
-                            <li>Pattern recognition and always keeps the Big Picture in mind</li>
-                            <li>Logical decision maker and Strategic with work loads and deadlines</li>
-                            <li>Take the chaos and leave Order in my wake</li>
-                        
-                        
+                        <li>Energized and Sociable Morale Booster</li>
+                        <li>Pattern recognition and always keeps the Big Picture in mind</li>
+                        <li>Logical decision maker and Strategic with work loads and deadlines</li>
+                        <li>Take the chaos and leave Order in my wake</li>
+
+
                         <h5 class="mt-3">Strengths:</h5>
                         <ul>
                             <li>Strategic thinker</li>
@@ -80,7 +87,7 @@
                             <li>Direct communicator</li>
                             <li>Adaptable</li>
                         </ul>
-                        
+
                         <h5>Weaknesses:</h5>
                         <ul>
                             <li>Impatient with inefficiency</li>
@@ -89,7 +96,7 @@
                             <li>Struggles with declining a challenge</li>
                         </ul>
                     </div>
-                    
+
                     <h3 class="section-title">Skills & Abilities</h3>
                     <div class="stat-block">
                         <div class="mb-3">
@@ -139,7 +146,7 @@
                         </div>
                     </div>
                 </div>
-                
+
                 <div class="col-md-6">
                     <h3 class="section-title">Quest Log (Experience)</h3>
                     <div class="stat-block">
@@ -150,16 +157,16 @@
                             <li>Building a broad range of Coding techniques for future quests</li>
                             <li>Perfecting devloper etiquette and the art of 'Not Quitting'</li>
                         </ul>
-                        
+
                         <h5 class="mt-4">Previous Adventures:</h5>
                         <p><strong>Founding Member and Developer</strong> at Rose Lanith RPG (2017-Present)</p>
                         <ul>
                             <li>Built the entire Magic System and assisted with our Comabt System</li>
                             <li>Optimized live Character Progression tracking </li>
-                            <li>Maintaining current campaigns (One Shot and Epic)</li>
+                            <li>Maintaining current campaigns (One Shots and Epic)</li>
                             <li>Update systems and add new game mechanics</li>
                         </ul>
-                        
+
                         <p><strong>Apprentice</strong> at Women In Construction (WinC) (2020-2024)</p>
                         <ul>
                             <li>Mastered the arcane arts of Carpentry and Construction</li>
@@ -168,7 +175,7 @@
                             <li>Assisted with training in following classes</li>
                         </ul>
                     </div>
-                    
+
                     <h3 class="section-title">Hobbies & Interests</h3>
                     <div class="stat-block text-center">
                         <div class="row">
@@ -200,11 +207,13 @@
                             </div>
                         </div>
                     </div>
-                    
+
                     <h3 class="section-title">Passion & Drive</h3>
                     <div class="stat-block">
                         <blockquote class="blockquote">
-                            <p>"I seek to craft digital experiences that are as intuitive as they are magical, solving real problems with elegant solutions. Every line of code is a spell that shapes reality, and I strive to wield this power responsibly."</p>
+                            <p>"I seek to craft digital experiences that are as intuitive as they are magical, solving
+                                real problems with elegant solutions. Every line of code is a spell that shapes reality,
+                                and I strive to wield this power responsibly."</p>
                         </blockquote>
                         <p>My quest is to:</p>
                         <ul>
@@ -216,12 +225,169 @@
                     </div>
                 </div>
             </div>
-            
-            <div class="footer">
-                <p>This character sheet was last updated on the [Insert Date]</p>
+            <div class="row mt-4">
+                <div class="col-12">
+                    <h3 class="section-title">Epic Achievements (Projects)</h3>
+                    <div class="stat-block">
+                        <div class="row">
+                            <!-- Project 1 -->
+                            <div class="col-md-4 mb-4">
+                                <div class="card h-100">
+                                    <img src="project1-placeholder.jpg" class="card-img-top" alt="Project 1">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Character Sheet Portfolio</h5>
+                                        <p class="card-text">An ambitious automated character sheet, utilizing
+                                            GoogleSheets.
+                                            This project is set to replace handwritten character sheets in a way that
+                                            Game
+                                            Masters can observe offering transparancy. All changes to the sheet are
+                                            logged,
+                                            cutting down on accidents and boosting accountability while also lessing the
+                                            headache of equations and item logging.</p>
+                                        <div class="d-flex justify-content-between align-items-center">
+                                            <div class="btn-group">
+                                                <a href="https://docs.google.com/spreadsheets/d/1nyvpXIX2Wr-4FcexcVA_F_WZtlC6Ev8Hv95dreXBy1A/edit?usp=sharing"
+                                                    class="btn btn-sm btn-outline-secondary">View</a>
+                                            </div>
+                                            <small class="text-muted">Excel, Cell Code, GoogleSheets</small>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Project 2 -->
+                            <div class="col-md-4 mb-4">
+                                <div class="card h-100">
+                                    <img src="./sortinghat.png" class="card-img-top" alt="Project 2">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Hogwarts Novalty House Sorter</h5>
+                                        <p class="card-text">This side quest was a fun and challenging introduction to
+                                            the great world of JavaScript.
+                                            The project was built using HTML, CSS, and JavaScript. The goal was to
+                                            create a simple web application that randomly assigns a Hogwarts house to
+                                            the user when they click a button. The project was a fun way to practice
+                                            JavaScript and learn about DOM manipulation.</p>
+                                        </p>
+                                        <div class="d-flex justify-content-between align-items-center">
+                                            <div class="btn-group">
+                                                <a href="." class="btn btn-sm btn-outline-secondary">View</a>
+                                                <a href="https://github.com/StudiousCorgi/Sorting-Hat.git"
+                                                    class="btn btn-sm btn-outline-secondary">Code</a>
+                                            </div>
+                                            <small class="text-muted">HTML, CSS, JavaScript</small>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Project 3 -->
+                            <div class="col-md-4 mb-4">
+                                <div class="card h-100">
+                                    <img src="./RoseLanithRPG.jpg" class="card-img-top" alt="Project 3">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Rose Lanith RPG System</h5>
+                                        <p class="card-text">A digital implementation of a custom tabletop RPG system
+                                            with character tracking and rules documentation.</p>
+                                        <div class="d-flex justify-content-between align-items-center">
+                                            <div class="btn-group">
+                                                <a href="./Projects/TROL-Rulebook - Rules & Info..pdf"
+                                                    class="btn btn-sm btn-outline-secondary">Rules & Walk-Through</a>
+                                                <a href="./Projects/TROL-Rulebook - Arcana.pdf"
+                                                    class="btn btn-sm btn-outline-secondary">Magic System</a>
+                                            </div>
+                                            <small class="text-muted">Word, Excel, GoogleSheets</small>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <!-- Project 4 -->
+                                <div class="col-md-4 mb-4">
+                                    <div class="card h-100">
+                                        <img src="./Projects/ResumeProject_Bloomlanding.png" class="card-img-top"
+                                            alt="Project 1">
+                                        <div class="card-body">
+                                            <h5 class="card-title">Bloom Landing</h5>
+                                            <p class="card-text">The first test of my skills from <b>Arch Coding
+                                                    Mage</b>, Mike. A Frontend site was shown to our class, and our task
+                                                was to recreate it with the accuracy of a silk seamstress. Building code
+                                                freely was easy, but to match specifications offered a fun and
+                                                intriguing challenge.</p>
+                                            <div class="d-flex justify-content-between align-items-center">
+                                                <div class="btn-group">
+                                                    <a href="https://studiouscorgi.github.io/Bloom-Landing/"
+                                                        class="btn btn-sm btn-outline-secondary">View</a>
+                                                    <a href="https://github.com/StudiousCorgi/Bloom-Landing.git"
+                                                        class="btn btn-sm btn-outline-secondary">Code</a>
+                                                </div>
+                                                <small class="text-muted">skills needed</small>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- Project 5 -->
+                                <div class="col-md-4 mb-4">
+                                    <div class="card h-100">
+                                        <img src="./Projects/ResumeProject_Detroix.png" class="card-img-top"
+                                            alt="Project 1">
+                                        <div class="card-body">
+                                            <h5 class="card-title">Detroix</h5>
+                                            <p class="card-text">Another welcomed challenge, sent from the <b>Arch
+                                                    Coding Mage</b> himself! My foundation skills in HTML and CSS were
+                                                tested as he assigned another site to recreate. This is final
+                                                'pre-Bootstrap' assignment, and solidified my confidence in my solid
+                                                front-end coding foundation</p>
+                                            <div class="d-flex justify-content-between align-items-center">
+                                                <div class="btn-group">
+                                                    <a href="https://studiouscorgi.github.io/Detroix-Project/"
+                                                        class="btn btn-sm btn-outline-secondary">View</a>
+                                                    <a href="https://github.com/StudiousCorgi/Detroix-Project.git" class="btn btn-sm btn-outline-secondary">Code</a>
+                                                </div>
+                                                <small class="text-muted">Bootstrap, HTML, CSS, JavaScript</small>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- Project 6 -->
+                                <div class="col-md-4 mb-4">
+                                    <div class="card h-100">
+                                        <img src="./SensuSnacks.jpg" class="card-img-top" alt="Project 1">
+                                        <div class="card-body">
+                                            <h5 class="card-title">Sensu Snacks LLC</h5>
+                                            <p class="card-text">This project is a store front for a local business.
+                                                With guidance from our <b>Arch Coding Mage</b>, Mike, I managed to
+                                                conqure the great beast known as <i>"Slide Show</i>, it now bends to my
+                                                will, displaying the discounts and advertisments for said local
+                                                business!</p>
+                                            <div class="d-flex justify-content-between align-items-center">
+                                                <div class="btn-group">
+                                                    <a href="https://studiouscorgi.github.io/SensuSnacksLLC/"
+                                                        class="btn btn-sm btn-outline-secondary">View</a>
+                                                    <a href="https://github.com/StudiousCorgi/SensuSnacksLLC.git"
+                                                        class="btn btn-sm btn-outline-secondary">Code</a>
+                                                </div>
+                                                <small class="text-muted">HTML, CSS, JavaScript</small>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+
+                <div class="footer">
+
+
+                    <div class="footer">
+                        <p>This character sheet was last updated on the [Insert Date]</p>
+                    </div>
+                </div>
             </div>
-        </div>
-    </div>
 
 </body>
+
 </html>
